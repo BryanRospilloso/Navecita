@@ -43,5 +43,9 @@ public:
 	//float TotalTime;
 	//float RandomStart;
 	float MoveSpeed;
+	/** Returns ShipMeshComponent subobject **/
+	FORCEINLINE class UStaticMeshComponent* GetEnemigoMesh() const { return EnemigoMesh; }
+	/** Returns CameraComponent subobject **/
+	FORCEINLINE class UCapsuleComponent* GetCollisionComponent() const { return CollisionComponent; }
 
 };
